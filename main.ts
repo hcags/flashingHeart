@@ -20,13 +20,17 @@ input.onGesture(Gesture.Shake, function () {
     basic.showIcon(IconNames.Heart)
     working = true
 })
-let working = false
 let speed = 0
+let working = false
 let brightness = 255
-speed = 0
-working = true
 let steps = 10
-basic.showIcon(IconNames.Heart)
+let icon:number = 0
+let icons = {
+    0:IconNames.Heart,
+    1:IconNames.Happy,
+    2:IconNames.Duck,
+    3:IconNames.Skull}
+basic.showIcon(icons[icon])
 basic.setLedColor(0x00ff00)
 basic.forever(function () {
     if (working) {
