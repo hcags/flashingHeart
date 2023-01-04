@@ -18,6 +18,4 @@ basic.forever(function () {
     } else {
         led.enable(false)
     }
-    basic.pause(600)
-    ShowLed = 0
 })
