@@ -2,11 +2,11 @@ input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
 	
 })
 basic.showLeds(`
-    # . . . #
-    # # . # #
-    . . . . .
-    # . . . #
+    . # . # .
+    # # # # #
+    # # # # #
     . # # # .
+    . . # . .
     `)
 let showLed = 1
 basic.forever(function () {
