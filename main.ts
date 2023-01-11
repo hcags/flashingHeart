@@ -1,6 +1,7 @@
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
-	
+    Play = false
 })
+let Play = false
 basic.showLeds(`
     . # . # .
     # # # # #
@@ -9,8 +10,9 @@ basic.showLeds(`
     . . # . .
     `)
 let showLed = 1
+Play = true
 basic.forever(function () {
-    if (true) {
+    if (!(Play)) {
     	
     } else if (showLed == 0) {
         led.enable(true)
