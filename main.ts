@@ -10,7 +10,7 @@ basic.forever(function () {
     if (ShowLed == 0) {
         led.enable(true)
         ShowLed = 1
-    } else {
+    } else if (ShowLed == 1) {
         led.enable(false)
         ShowLed = 0
     }
