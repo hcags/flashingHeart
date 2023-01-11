@@ -3,7 +3,7 @@ input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
 })
 basic.showLeds(`
     . # . # .
-    # # . # #
+    # # # # #
     # # # # #
     . # # # .
     . . # . .
