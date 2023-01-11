@@ -11,7 +11,7 @@ basic.showLeds(`
 let ShowLed = 1
 basic.forever(function () {
     if (true) {
-    	
+
     } else if (ShowLed == 0) {
         led.enable(true)
         ShowLed = 1
