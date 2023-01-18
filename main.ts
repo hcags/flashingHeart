@@ -1,14 +1,17 @@
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
-	
+    Play = !(Play)
+    music.playMelody("C5 B A G F E D C ", 120)
 })
+let Play = false
 basic.showLeds(`
+    # . . . #
     . # . # .
-    # # # # #
-    # # # # #
-    . # # # .
-    . . # . .
+    . . . . .
+    # # . # #
+    # . . . #
     `)
 let showLed = 1
+Play = true
 basic.forever(function () {
     if (true) {
     	
