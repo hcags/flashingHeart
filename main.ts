@@ -1,6 +1,9 @@
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
-	
+    Play = !(Play)
+    music.playTone(523, music.beat(BeatFraction.Whole))
+    music.playMelody("C5 B A G F E D C ", 120)
 })
+let Play = false
 basic.showLeds(`
     . # . # .
     # # # # #
@@ -9,8 +12,9 @@ basic.showLeds(`
     . . # . .
     `)
 let showLed = 1
+Play = true
 basic.forever(function () {
-    if (true) {
+    if (!(Play)) {
     	
     } else if (showLed == 0) {
         led.enable(true)
