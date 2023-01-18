@@ -1,5 +1,6 @@
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
-    Play = true
+    Play = !(Play)
+    music.playMelody("A E A E A C5 B G ", 120)
 })
 let Play = false
 basic.showLeds(`
