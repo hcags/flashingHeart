@@ -1,10 +1,11 @@
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     Play = false
+    music.playMelody("C5 B A G F E D C ", 1e+21)
 })
 let Play = false
 basic.showLeds(`
     . # . # .
-    # # # # #
+    . # # # #
     # # # # #
     . # # # .
     . . # . .
